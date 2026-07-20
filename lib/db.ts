@@ -31,3 +31,10 @@ export async function addPrayer(name: string, prayer: string) {
 export async function deletePrayer(id: number) {
   await sql`DELETE FROM prayers WHERE id = ${id};`;
 }
+
+export async function addPrayerWithDate(name: string, prayer: string, createdAt: string) {
+  await ensureTable();
+  await sql`
+    INSERT INTO prayers (name, prayer, created_at) VALUES (${name}, ${prayer}, ${createdAt});
+  `;
+}
