@@ -32,11 +32,11 @@ export default function Header() {
             strokeLinejoin="round"
           />
           <path
-            d="M18 47V34L20 26L24.5 20L32 17L39.5 20L44 26L46 34V47Q46 48.3 44.7 48.3H19.3Q18 48.3 18 47Z"
+            d="M18 46V32C18 20 24 15 32 15C40 15 46 20 46 32V46Q46 50 42 50H22Q18 50 18 46Z"
             fill="white"
           />
-          <rect x="29.7" y="17" width="4.6" height="33" fill="#4CAF50" />
-          <rect x="23" y="25.5" width="18" height="4.6" fill="#4CAF50" />
+          <rect x="30" y="22" width="4" height="34" fill="#4CAF50" />
+          <rect x="24" y="28" width="16" height="4" fill="#4CAF50" />
         </svg>
       </div>
       <div style={{ fontSize: 12, fontWeight: 700, color: colors.primary, marginBottom: 2 }}>
