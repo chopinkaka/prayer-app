@@ -35,8 +35,8 @@ export default function Header() {
             d="M18 47V34L20 26L24.5 20L32 17L39.5 20L44 26L46 34V47Q46 48.3 44.7 48.3H19.3Q18 48.3 18 47Z"
             fill="white"
           />
-          <rect x="29" y="19" width="6" height="26" fill="#4CAF50" />
-          <rect x="21.5" y="27.5" width="21" height="6" fill="#4CAF50" />
+          <rect x="29.7" y="17" width="4.6" height="33" fill="#4CAF50" />
+          <rect x="23" y="25.5" width="18" height="4.6" fill="#4CAF50" />
         </svg>
       </div>
       <div style={{ fontSize: 12, fontWeight: 700, color: colors.primary, marginBottom: 2 }}>
