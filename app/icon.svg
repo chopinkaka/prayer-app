@@ -4,7 +4,14 @@
     d="M32 6C19 6 9 16.5 9 30v19a2 2 0 0 0 2 2h42a2 2 0 0 0 2-2V30C55 16.5 45 6 32 6Z"
     fill="none"
     stroke="white"
-    strokeWidth="4.5"
+    strokeWidth="4"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M32 14.5C22.5 14.5 16.5 22 16.5 31v14.5A1.5 1.5 0 0 0 18 47h28a1.5 1.5 0 0 0 1.5-1.5V31C47.5 22 41.5 14.5 32 14.5Z"
+    fill="none"
+    stroke="white"
+    strokeWidth="3"
     strokeLinejoin="round"
   />
   <rect x="29" y="19" width="6" height="26" fill="white"/>
