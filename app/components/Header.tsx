@@ -38,22 +38,20 @@ export default function Header() {
             strokeWidth="3"
             strokeLinejoin="round"
           />
-          <rect x="27.5" y="23" width="9" height="24" fill="white" />
-          <rect x="20" y="30.5" width="24" height="9" fill="white" />
+          <rect x="29" y="19" width="6" height="26" fill="white" />
+          <rect x="21" y="27" width="22" height="6" fill="white" />
         </svg>
       </div>
-      <div style={{ fontSize: 13, fontWeight: 700, color: colors.primary, marginBottom: 2 }}>
+      <div style={{ fontSize: 12, fontWeight: 700, color: colors.primary, marginBottom: 2 }}>
         아둘람 청년부
       </div>
-      <h1 style={{ fontSize: 24, fontWeight: 800, color: colors.primaryDark, margin: '0 0 10px' }}>
+      <h1 style={{ fontSize: 20, fontWeight: 800, color: colors.primaryDark, margin: '0 0 8px' }}>
         중보기도
       </h1>
-      <p style={{ fontSize: 13, color: colors.textMuted, lineHeight: 1.6, marginBottom: 20 }}>
-        함께 마음을 모아 기도해요. 나누고 싶은 기도제목을
-        <br />
-        남겨주시면 청년부가 함께 중보합니다.
+      <p style={{ fontSize: 12, color: colors.textMuted, lineHeight: 1.55, marginBottom: 18 }}>
+        함께 마음을 모아 기도해요. 나누고 싶은 기도제목을 남겨주시면 청년부가 함께 중보합니다.
       </p>
-      <div style={{ display: 'flex', gap: 10, justifyContent: 'center' }}>
+      <div style={{ display: 'flex', gap: 8, justifyContent: 'center' }}>
         <button
           style={isFeed ? s.tabInactive : s.tabActive}
           onClick={() => router.push('/')}
@@ -84,23 +82,25 @@ const s: Record<string, React.CSSProperties> = {
     boxShadow: '0 4px 14px rgba(76,175,80,0.35)',
   },
   tabActive: {
-    padding: '11px 22px',
+    padding: '10px 16px',
     borderRadius: 24,
     border: 'none',
     background: colors.primary,
     color: 'white',
-    fontSize: 14,
+    fontSize: 13,
     fontWeight: 700,
     cursor: 'pointer',
+    whiteSpace: 'nowrap',
   },
   tabInactive: {
-    padding: '11px 22px',
+    padding: '10px 16px',
     borderRadius: 24,
     border: `2px solid ${colors.border}`,
     background: 'white',
     color: colors.primaryDark,
-    fontSize: 14,
+    fontSize: 13,
     fontWeight: 700,
     cursor: 'pointer',
+    whiteSpace: 'nowrap',
   },
 };
