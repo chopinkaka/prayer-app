@@ -1,9 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { listPrayers, addPrayer } from '../../../lib/db';
 
-export async function GET() {
+export async function GET(req: NextRequest) {
   try {
-    const prayers = await listPrayers();
+    const deviceId = req.nextUrl.searchParams.get('device_id') || undefined;
+    const prayers = await listPrayers(deviceId);
     return NextResponse.json({ success: true, data: prayers });
   } catch (err: any) {
     return NextResponse.json({ success: false, error: err.message }, { status: 500 });

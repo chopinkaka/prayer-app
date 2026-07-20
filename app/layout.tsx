@@ -1,6 +1,10 @@
 export const metadata = {
-  title: '중보기도 기도제목',
-  description: '기도제목을 남겨주시면 함께 기도하겠습니다',
+  title: '아둘람 청년부 중보기도',
+  description: '함께 마음을 모아 기도해요. 나누고 싶은 기도제목을 남겨주시면 청년부가 함께 중보합니다.',
+};
+
+export const viewport = {
+  themeColor: '#4CAF50',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

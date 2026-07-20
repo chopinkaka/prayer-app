@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import Header from './components/Header';
+import { colors } from '../lib/theme';
 
 export default function Home() {
   const [name, setName] = useState('');
@@ -46,15 +48,7 @@ export default function Home() {
   return (
     <div style={styles.wrap}>
       <div style={styles.card}>
-        <div style={{ textAlign: 'center', marginBottom: 32 }}>
-          <div style={{ fontSize: 40, marginBottom: 10 }}>✝️</div>
-          <h1 style={{ fontSize: 22, fontWeight: 800, color: '#3d2b6b', marginBottom: 6 }}>
-            중보기도 기도제목
-          </h1>
-          <p style={{ fontSize: 14, color: '#999', lineHeight: 1.6 }}>
-            기도제목을 남겨주시면<br />함께 기도하겠습니다 🙏
-          </p>
-        </div>
+        <Header />
 
         {!done ? (
           <>
@@ -63,7 +57,7 @@ export default function Home() {
               style={styles.input}
               value={name}
               maxLength={20}
-              placeholder="성함 (익명 원하시면 '익명'으로 입력)"
+              placeholder="성함 · 익명도 괜찮아요"
               onChange={(e) => setName(e.target.value)}
             />
             {errName && <div style={styles.error}>이름을 입력해주세요.</div>}
@@ -73,10 +67,10 @@ export default function Home() {
               style={{ ...styles.input, height: 150, resize: 'none' }}
               value={prayer}
               maxLength={500}
-              placeholder="기도제목을 자유롭게 적어주세요"
+              placeholder="나누고 싶은 기도제목을 자유롭게 적어주세요"
               onChange={(e) => setPrayer(e.target.value)}
             />
-            <div style={{ textAlign: 'right', fontSize: 12, color: '#bbb', marginTop: 4 }}>
+            <div style={{ textAlign: 'right', fontSize: 12, color: colors.textMuted, marginTop: 4 }}>
               {prayer.length} / 500
             </div>
             {errPrayer && <div style={styles.error}>기도제목을 입력해주세요.</div>}
@@ -88,11 +82,13 @@ export default function Home() {
         ) : (
           <div style={{ textAlign: 'center', padding: '10px 0' }}>
             <div style={{ fontSize: 54, marginBottom: 14 }}>🙏</div>
-            <h2 style={{ fontSize: 20, color: '#3d2b6b', marginBottom: 8 }}>
+            <h2 style={{ fontSize: 20, color: colors.primaryDark, marginBottom: 8 }}>
               기도제목이 전달되었습니다
             </h2>
-            <p style={{ fontSize: 14, color: '#999', lineHeight: 1.7 }}>
-              소중한 기도제목을 나눠주셔서 감사합니다.<br />함께 중보기도 드리겠습니다.
+            <p style={{ fontSize: 14, color: colors.textMuted, lineHeight: 1.7 }}>
+              소중한 기도제목을 나눠주셔서 감사합니다.
+              <br />
+              함께 중보기도 드리겠습니다.
             </p>
             <button style={styles.againBtn} onClick={reset}>
               기도제목 추가 제출하기
@@ -106,7 +102,7 @@ export default function Home() {
 
 const styles: Record<string, React.CSSProperties> = {
   wrap: {
-    background: 'linear-gradient(135deg, #e8f4f8 0%, #f0e6ff 100%)',
+    background: colors.bg,
     minHeight: '100vh',
     display: 'flex',
     alignItems: 'center',
@@ -119,19 +115,19 @@ const styles: Record<string, React.CSSProperties> = {
     padding: '40px 36px',
     width: '100%',
     maxWidth: 480,
-    boxShadow: '0 8px 32px rgba(100,60,180,0.12)',
+    boxShadow: '0 8px 32px rgba(46,125,50,0.10)',
   },
   label: {
     display: 'block',
     fontSize: 13,
     fontWeight: 700,
-    color: '#5a3fa0',
+    color: colors.primaryDark,
     marginBottom: 6,
     marginTop: 20,
   },
   input: {
     width: '100%',
-    border: '2px solid #e0d8f5',
+    border: `2px solid ${colors.border}`,
     borderRadius: 10,
     padding: '12px 14px',
     fontSize: 15,
@@ -145,7 +141,7 @@ const styles: Record<string, React.CSSProperties> = {
     width: '100%',
     marginTop: 28,
     padding: 15,
-    background: 'linear-gradient(135deg, #7c5cbf, #9b72d8)',
+    background: `linear-gradient(135deg, ${colors.primary}, ${colors.primaryDark})`,
     color: 'white',
     border: 'none',
     borderRadius: 12,
@@ -158,8 +154,8 @@ const styles: Record<string, React.CSSProperties> = {
     width: '100%',
     padding: 12,
     background: 'transparent',
-    border: '2px solid #7c5cbf',
-    color: '#7c5cbf',
+    border: `2px solid ${colors.primary}`,
+    color: colors.primaryDark,
     borderRadius: 12,
     fontSize: 14,
     fontWeight: 700,
