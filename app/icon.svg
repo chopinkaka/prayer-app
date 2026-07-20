@@ -1,12 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
   <rect width="64" height="64" rx="14" fill="#4CAF50"/>
   <path
-    d="M32 10C21.5 10 14 19 14 31v16a2 2 0 0 0 2 2h32a2 2 0 0 0 2-2V31c0-12-7.5-21-18-21Z"
+    d="M32 6C19 6 9 16.5 9 30v19a2 2 0 0 0 2 2h42a2 2 0 0 0 2-2V30C55 16.5 45 6 32 6Z"
     fill="none"
     stroke="white"
-    strokeWidth="4.5"
+    strokeWidth="4"
     strokeLinejoin="round"
   />
-  <rect x="28.5" y="26" width="7" height="20" fill="white"/>
-  <rect x="22" y="32.5" width="20" height="7" fill="white"/>
+  <path
+    d="M32 14.5C22.5 14.5 16.5 22 16.5 31v14.5A1.5 1.5 0 0 0 18 47h28a1.5 1.5 0 0 0 1.5-1.5V31C47.5 22 41.5 14.5 32 14.5Z"
+    fill="none"
+    stroke="white"
+    strokeWidth="3"
+    strokeLinejoin="round"
+  />
+  <rect x="27.5" y="23" width="9" height="24" fill="white"/>
+  <rect x="20" y="30.5" width="24" height="9" fill="white"/>
 </svg>
