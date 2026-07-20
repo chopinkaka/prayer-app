@@ -25,21 +25,11 @@ export default function Header() {
       <div style={s.logo}>
         <svg viewBox="0 0 64 64" width={40} height={40}>
           <path
-            d="M32 6C19 6 9 16.5 9 30v19a2 2 0 0 0 2 2h42a2 2 0 0 0 2-2V30C55 16.5 45 6 32 6Z"
-            fill="none"
-            stroke="white"
-            strokeWidth="4"
-            strokeLinejoin="round"
+            d="M14 48V30C14 17 22 8 32 8C42 8 50 17 50 30V48Q50 51.5 46.5 51.5H17.5Q14 51.5 14 48Z"
+            fill="white"
           />
-          <path
-            d="M32 14.5C22.5 14.5 16.5 22 16.5 31v14.5A1.5 1.5 0 0 0 18 47h28a1.5 1.5 0 0 0 1.5-1.5V31C47.5 22 41.5 14.5 32 14.5Z"
-            fill="none"
-            stroke="white"
-            strokeWidth="3"
-            strokeLinejoin="round"
-          />
-          <rect x="29" y="19" width="6" height="26" fill="white" />
-          <rect x="21" y="27" width="22" height="6" fill="white" />
+          <rect x="28.8" y="20" width="6.4" height="23" fill="#2b2b2b" />
+          <rect x="20.8" y="27.8" width="22.4" height="6.4" fill="#2b2b2b" />
         </svg>
       </div>
       <div style={{ fontSize: 12, fontWeight: 700, color: colors.primary, marginBottom: 2 }}>
@@ -48,8 +38,10 @@ export default function Header() {
       <h1 style={{ fontSize: 20, fontWeight: 800, color: colors.primaryDark, margin: '0 0 8px' }}>
         중보기도
       </h1>
-      <p style={{ fontSize: 12, color: colors.textMuted, lineHeight: 1.55, marginBottom: 18 }}>
-        함께 마음을 모아 기도해요. 나누고 싶은 기도제목을 남겨주시면 청년부가 함께 중보합니다.
+      <p style={{ fontSize: 12, color: colors.textMuted, lineHeight: 1.6, marginBottom: 18 }}>
+        함께 마음을 모아 기도해요.
+        <br />
+        나누고 싶은 기도제목을 남겨주시면 청년부가 함께 중보합니다.
       </p>
       <div style={{ display: 'flex', gap: 8, justifyContent: 'center' }}>
         <button

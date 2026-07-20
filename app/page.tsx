@@ -57,7 +57,7 @@ export default function Home() {
               style={styles.input}
               value={name}
               maxLength={20}
-              placeholder="성함 · 익명도 괜찮아요"
+              placeholder="성함 (익명도 괜찮아요)"
               onChange={(e) => setName(e.target.value)}
             />
             {errName && <div style={styles.error}>이름을 입력해주세요.</div>}
