@@ -25,18 +25,18 @@ export default function Header() {
       <div style={s.logo}>
         <svg viewBox="0 0 64 64" width={40} height={40}>
           <path
-            d="M11 50V32L14 20L21 11L32 7L43 11L50 20L53 32V50Q53 52 51 52H13Q11 52 11 50Z"
+            d="M7 50V34L11 22L20 12L32 9L44 12L53 22L57 34V50Q57 52 55 52H9Q7 52 7 50Z"
             fill="none"
             stroke="white"
             strokeWidth="3.6"
             strokeLinejoin="round"
           />
           <path
-            d="M18 46V32C18 20 24 15 32 15C40 15 46 20 46 32V46Q46 50 42 50H22Q18 50 18 46Z"
+            d="M13 44V32C13 22 20 17 32 17C44 17 51 22 51 32V44Q51 48 47 48H17Q13 48 13 44Z"
             fill="white"
           />
-          <rect x="30" y="22" width="4" height="34" fill="#4CAF50" />
-          <rect x="24" y="28" width="16" height="4" fill="#4CAF50" />
+          <rect x="30.2" y="25" width="3.6" height="30" fill="#4CAF50" />
+          <rect x="25" y="30" width="14" height="3.6" fill="#4CAF50" />
         </svg>
       </div>
       <div style={{ fontSize: 12, fontWeight: 700, color: colors.primary, marginBottom: 2 }}>
