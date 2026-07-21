@@ -23,21 +23,7 @@ export default function Header() {
   return (
     <div style={{ textAlign: 'center', marginBottom: 24 }}>
       <div style={s.logo}>
-        <svg viewBox="0 0 64 64" width={40} height={40}>
-          <path
-            d="M7 50V34L11 22L20 12L32 9L44 12L53 22L57 34V50Q57 52 55 52H9Q7 52 7 50Z"
-            fill="none"
-            stroke="white"
-            strokeWidth="3.6"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M13 44V32C13 22 20 17 32 17C44 17 51 22 51 32V44Q51 48 47 48H17Q13 48 13 44Z"
-            fill="white"
-          />
-          <rect x="30.2" y="25" width="3.6" height="30" fill="#4CAF50" />
-          <rect x="25" y="30" width="14" height="3.6" fill="#4CAF50" />
-        </svg>
+        <img src="/icon-192.png" alt="아둘람 청년부" width={64} height={64} style={{ borderRadius: 18 }} />
       </div>
       <div style={{ fontSize: 12, fontWeight: 700, color: colors.primary, marginBottom: 2 }}>
         아둘람 청년부
