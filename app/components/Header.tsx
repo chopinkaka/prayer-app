@@ -34,7 +34,9 @@ export default function Header() {
       <p style={{ fontSize: 12, color: colors.textMuted, lineHeight: 1.6, marginBottom: 18 }}>
         함께 마음을 모아 기도해요.
         <br />
-        나누고 싶은 기도제목을 남겨주시면 청년부가 함께 중보합니다.
+        나누고 싶은 기도제목을 남겨주시면
+        <br />
+        청년부가 함께 중보합니다.
       </p>
       <div style={{ display: 'flex', gap: 8, justifyContent: 'center' }}>
         <button
