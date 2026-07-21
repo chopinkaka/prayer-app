@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <div style={{ textAlign: 'center', marginBottom: 24 }}>
       <div style={s.logo}>
-        <img src="/icon-192.png" alt="아둘람 청년부" width={64} height={64} style={{ borderRadius: 18 }} />
+        <img src="/logo-header.png" alt="아둘람 청년부" width={64} height={64} style={{ borderRadius: 18 }} />
       </div>
       <div style={{ fontSize: 12, fontWeight: 700, color: colors.primary, marginBottom: 2 }}>
         아둘람 청년부
